@@ -2,8 +2,8 @@
 :open_file_folder: training_color-generator
 
 ## Description
-Generate color.  
-How does it look? Take a look at [Generate Color]()
+Generate random color and show its hexadecimal code.  
+How does it look? Take a look at [Generate Color](https://javierandresgp.github.io/training_color-generator/)
 
 ## Stack
 * HTML
