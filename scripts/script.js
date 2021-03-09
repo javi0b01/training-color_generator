@@ -1,4 +1,5 @@
 const d = document,
+  $gradient = d.getElementById('gradient'),
   $btn = d.getElementById('btn');
 
 d.addEventListener('DOMContentLoaded', () => {
@@ -14,6 +15,14 @@ const colorGenerator = () => {
     hexCode += hex[Math.floor(Math.random() * hex.length)];
     i++;
   }
-  d.querySelector('main').style.backgroundColor = hexCode;
-  $hex.innerHTML = `Hexadecimal code color: <span class="hex-code">${hexCode}</span>`;
+  if ($gradient.checked) {
+    d.querySelector('main').style.backgroundColor = hexCode; // when browser don't support gradient
+    d.querySelector(
+      'main'
+    ).style.backgroundImage = `linear-gradient(to bottom right, ${hexCode}, #fff)`;
+  } else {
+    d.querySelector('main').style.backgroundImage = ''; // to clean previous background image
+    d.querySelector('main').style.backgroundColor = hexCode;
+  }
+  $hex.innerHTML = `Hexadecimal base code color: <span class="hex-code">${hexCode}</span>`;
 };
