@@ -1,9 +1,9 @@
-# Self-training ― Front-End
-:open_file_folder: training_color-generator
+# Self―Training
+:octocat: training-color_generator
 
 ## Description
 Generate random color and show its hexadecimal code.  
-How does it look? Take a look at [Generate Color](https://javierandresgp.github.io/training_color-generator/)
+How does it look? Take a look at [Color Generator](https://javierandresgp.github.io/training-color_generator/)
 
 ## Stack
 * HTML
